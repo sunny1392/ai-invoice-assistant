@@ -7,8 +7,9 @@ datasource db {
 }
 
 model Invoice {
-  id         String   @id @default(cuid())
-  fileName   String
-  filePath   String
-  uploadedAt DateTime @default(now())
+  id            String   @id @default(cuid())
+  fileName      String
+  filePath      String
+  extractedData String?  @db.Text
+  uploadedAt    DateTime @default(now())
 }

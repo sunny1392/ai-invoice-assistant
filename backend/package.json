@@ -27,6 +27,8 @@
     "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "^7.9.1",
     "multer": "^2.2.0",
+    "ollama": "^0.6.3",
+    "openai": "^7.4.0",
     "pdf-parse": "^2.4.5",
     "pg": "^8.23.0",
     "prisma": "^7.9.1",
