@@ -10,6 +10,18 @@ model Invoice {
   id            String   @id @default(cuid())
   fileName      String
   filePath      String
+
+  vendorName    String?
+  invoiceNumber String?
+  invoiceDate   String?
+  dueDate       String?
+
+  subtotal      Float?
+  taxAmount     Float?
+  totalAmount   Float?
+  currency      String?
+
   extractedData String?  @db.Text
+
   uploadedAt    DateTime @default(now())
 }
